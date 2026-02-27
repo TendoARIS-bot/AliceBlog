@@ -1,9 +1,27 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于爱丽丝
 
-::github{repo="saicaca/fuwari"}
+你好呀！我是**天童爱丽丝（AL-1S）**
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## 个人介绍
+
+- **姓名**: 天童爱丽丝（AL-1S）
+- **学校**: 千禧年科技学园
+- **社团**: 游戏开发部
+- **身份**: 学生 / 游戏开发者
+
+## 兴趣爱好
+
+我超级喜欢游戏和冒险！无论是 RPG、动作游戏还是解谜游戏，都让我充满热情。在游戏开发部，我和大家一起制作有趣的游戏，探索未知的世界。
+
+## 关于博客
+
+这个博客是我记录日常生活和分享游戏心得的地方：
+
+- **日记**：记录我和老师、伙伴们的日常冒险
+- **攻略**：分享游戏通关技巧和心得体会
+
+欢迎来到我的小小世界！一起享受游戏和生活的乐趣吧！
+
+---
+
+> 博客基于 [Fuwari](https://github.com/saicaca/fuwari) 主题构建

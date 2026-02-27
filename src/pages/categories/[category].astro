@@ -1,0 +1,64 @@
+---
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import PostCard from "@components/PostCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+	const posts = await getCollection("posts");
+	const categories = new Set<string>();
+	
+	posts.forEach((post) => {
+		if (post.data.category) {
+			categories.add(post.data.category);
+		}
+	});
+	
+	return Array.from(categories).map((category) => {
+		const categoryPosts = posts
+			.filter((post) => post.data.category === category)
+			.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+		
+		return {
+			params: { category },
+			props: { posts: categoryPosts },
+		};
+	});
+}
+
+const { posts } = Astro.props;
+const { category } = Astro.params;
+
+const categoryNames: Record<string, string> = {
+	diary: "日记",
+	guides: "攻略",
+	// 中文分类直接使用
+	"日记": "日记",
+	"攻略": "攻略",
+};
+
+const displayName = categoryNames[category as string] || category;
+---
+
+<MainGridLayout title={displayName}>
+	<div class="max-w-[var(--page-width)] mx-auto px-4 py-8">
+		<div class="pt-8 mb-8">
+			<h1 class="text-3xl font-bold text-[var(--primary)] dark:text-purple-300 mb-2">{displayName}</h1>
+			<p class="text-[var(--text-secondary)] dark:text-gray-300">{posts.length} 篇文章</p>
+		</div>
+		<div class="space-y-4">
+			{posts.map((post) => (
+				<PostCard
+					entry={post}
+					title={post.data.title}
+					url={`/posts/${post.id}/`}
+					published={post.data.published}
+					tags={post.data.tags || []}
+					category={post.data.category || null}
+					image={post.data.image || ""}
+					description={post.data.description || ""}
+					style=""
+				/>
+			))}
+		</div>
+	</div>
+</MainGridLayout>
