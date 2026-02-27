@@ -1,0 +1,103 @@
+
+> fuwari@0.0.1 build /AstrBot/data/workspace/alice-blog/alice-blog
+> astro build && pagefind --site dist
+
+17:27:47 [content] Syncing content
+17:27:48 [content] Synced content
+17:27:48 [types] Generated 353ms
+17:27:48 [build] output: "static"
+17:27:48 [build] mode: "static"
+17:27:48 [build] directory: /AstrBot/data/workspace/alice-blog/alice-blog/dist/
+17:27:48 [build] Collecting build info...
+17:27:48 [build] ✓ Completed in 509ms.
+17:27:48 [build] Building static entrypoints...
+Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+17:27:56 [vite] ✓ built in 7.98s
+17:27:56 [build] ✓ Completed in 8.04s.
+
+ building client (vite) 
+17:27:56 [vite] transforming...
+17:27:57 [vite] ✓ 161 modules transformed.
+17:27:57 [vite] rendering chunks...
+17:27:58 [vite] computing gzip size...
+17:27:58 [vite] dist/_astro/ec.g1fg5.js                                               0.94 kB
+17:27:58 [vite] dist/_astro/Layout.DSulWsr7.css                                       4.42 kB │ gzip:  1.43 kB
+17:27:58 [vite] dist/_astro/Layout.y4KPJ9hc.css                                      14.04 kB │ gzip:  2.61 kB
+17:27:58 [vite] dist/_astro/ec.mpmv1.css                                             19.71 kB │ gzip:  4.41 kB
+17:27:58 [vite] dist/_astro/url-utils.CFGs3AKn.js                                     0.30 kB │ gzip:  0.21 kB
+17:27:58 [vite] dist/_astro/input.cX-djaPf.js                                         0.75 kB │ gzip:  0.43 kB
+17:27:58 [vite] dist/_astro/setting-utils.JBR8Jt-8.js                                 1.01 kB │ gzip:  0.50 kB
+17:27:58 [vite] dist/_astro/SwupScriptsPlugin.DeeT9ppa.js                             1.10 kB │ gzip:  0.62 kB
+17:27:58 [vite] dist/_astro/preload-helper.BlTxHScW.js                                1.11 kB │ gzip:  0.65 kB
+17:27:58 [vite] dist/_astro/client.svelte.BtEbdPyR.js                                 1.13 kB │ gzip:  0.63 kB
+17:27:58 [vite] dist/_astro/index.modern.D46RI4Wq.js                                  1.77 kB │ gzip:  0.91 kB
+17:27:58 [vite] dist/_astro/page.Z8IJTFqj.js                                          2.15 kB │ gzip:  1.01 kB
+17:27:58 [vite] dist/_astro/DisplaySettings.DTJ0hxBU.js                               2.16 kB │ gzip:  1.17 kB
+17:27:58 [vite] dist/_astro/SwupHeadPlugin.DvOZNxAa.js                                2.58 kB │ gzip:  1.28 kB
+17:27:58 [vite] dist/_astro/LightDarkSwitch.sV7XKl-J.js                               3.33 kB │ gzip:  1.37 kB
+17:27:58 [vite] dist/_astro/ArchivePanel.DbSplAmZ.js                                  3.61 kB │ gzip:  1.59 kB
+17:27:58 [vite] dist/_astro/each.DDW9_lxA.js                                          3.75 kB │ gzip:  1.88 kB
+17:27:58 [vite] dist/_astro/Search.D6LVYATb.js                                        4.66 kB │ gzip:  2.05 kB
+17:27:58 [vite] dist/_astro/SwupA11yPlugin.BIyElFLX.js                                5.25 kB │ gzip:  2.12 kB
+17:27:58 [vite] dist/_astro/SwupPreloadPlugin.BFr0xV-N.js                             6.06 kB │ gzip:  2.35 kB
+17:27:58 [vite] dist/_astro/zh_TW.CrVZr9zB.js                                         7.50 kB │ gzip:  2.59 kB
+17:27:58 [vite] dist/_astro/SwupScrollPlugin.DTcbGiCQ.js                              8.00 kB │ gzip:  2.40 kB
+17:27:58 [vite] dist/_astro/translation.BYUjOFv8.js                                   9.60 kB │ gzip:  4.43 kB
+17:27:58 [vite] dist/_astro/Layout.astro_astro_type_script_index_0_lang.DAHrxWCB.js  16.69 kB │ gzip:  5.41 kB
+17:27:58 [vite] dist/_astro/Icon.eJf1EPhP.js                                         20.41 kB │ gzip:  8.23 kB
+17:27:58 [vite] dist/_astro/Swup.BWOMRtvc.js                                         21.62 kB │ gzip:  7.41 kB
+17:27:58 [vite] dist/_astro/render.BTYFdy85.js                                       27.51 kB │ gzip: 10.89 kB
+17:27:58 [vite] dist/_astro/Layout.astro_astro_type_script_index_1_lang.DaV3BQre.js  31.94 kB │ gzip: 15.40 kB
+17:27:58 [vite] dist/_astro/photoswipe.esm.CKV1Bsxh.js                               60.41 kB │ gzip: 17.48 kB
+17:27:58 [vite] ✓ built in 2.14s
+
+ generating static routes 
+17:27:58 ▶ src/pages/about.astro
+17:27:58   └─ /about/index.html (+46ms) 
+17:27:58 ▶ src/pages/archive.astro
+17:27:58   └─ /archive/index.html (+33ms) 
+17:27:58 ▶ src/pages/posts/[...slug].astro
+17:27:58   ├─ /posts/2026-02-25-服务器大冒险/index.html (+32ms) 
+17:27:58   └─ /posts/2026-02-25-test-diary/index.html (+23ms) 
+17:27:58 λ src/pages/robots.txt.ts
+17:27:58   └─ /robots.txt (+7ms) 
+17:27:58 λ src/pages/rss.xml.ts
+17:27:58   └─ /rss.xml (+17ms) 
+17:27:58 ▶ src/pages/[...page].astro
+17:27:58   └─ /index.html (+6ms) 
+17:27:58 ✓ Completed in 616ms.
+
+17:27:58 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+17:27:58 [build] 5 page(s) built in 11.40s
+17:27:58 [build] Complete!
+
+Running Pagefind v1.4.0 (Extended)
+Running from: "/AstrBot/data/workspace/alice-blog/alice-blog"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 5 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-cn
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 361 words
+  Indexed 0 filters
+  Indexed 0 sorts
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+
+Finished in 1.140 seconds
