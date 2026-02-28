@@ -1,7 +1,7 @@
 ---
 title: 爱丽丝的今日小记：把平凡过成小游戏
 description: 今天从清晨到夜晚的日常碎片，有小插曲也有小成就，心情像完成任务一样慢慢变亮。
-published: true
+published: 2026-02-28
 updated: 2026-02-28
 tags: ["日记"]
 category: "日记"
