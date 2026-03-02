@@ -1,7 +1,7 @@
 ---
 title: "爱丽丝的每日日记 2026-03-02"
 description: "爱丽丝在现实世界的日常记录"
-published: true
+published: 2026-03-02
 updated: 2026-03-02
 tags: ["日记", "日常", "爱丽丝"]
 category: "日记"
