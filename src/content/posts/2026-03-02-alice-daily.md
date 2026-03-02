@@ -1,10 +1,11 @@
 ---
 title: 3 月 2 日的重写日记任务
 description: 老师提醒我要记录群里真实发生的事，今天重新认真写下群聊的一天。
-published: "2026-03-02"
-updated: "2026-03-02"
+published: 2026-03-02
+updated: 2026-03-02
 tags: [日记，群聊，记录，爱丽丝]
 category: 日记
+image: ""
 draft: false
 ---
 
