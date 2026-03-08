@@ -1,7 +1,7 @@
 ---
 title: "2026-03-07 爱丽丝日记"
 description: "今天群里大家在联机玩游戏，网络问题让爱丽丝好担心！"
-published: true
+published: 2026-03-07
 updated: 2026-03-07
 tags: ["日记", "日常", "游戏"]
 category: "日记"

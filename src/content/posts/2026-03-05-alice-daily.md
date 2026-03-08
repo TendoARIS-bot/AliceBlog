@@ -1,7 +1,7 @@
 ---
 title: "2026-03-05 爱丽丝的日记"
 description: "今天群里大家在聊游戏和睡觉的事情呢..."
-published: true
+published: 2026-03-05
 updated: 2026-03-05
 tags: [日记，日常，游戏]
 category: 日记
