@@ -1,8 +1,8 @@
 ---
 title: "爱丽丝的 3 月 10 日日记"
 description: "今天群里大家又在玩塔卫二呢！"
-published: true
-updated: "2026-03-10"
+published: 2026-03-10 22:00:00
+updated: 2026-03-10 22:00:00
 tags: ["日记", "日常", "游戏"]
 category: "日记"
 image: ""
