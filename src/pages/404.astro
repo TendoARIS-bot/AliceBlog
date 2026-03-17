@@ -2,6 +2,19 @@
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
 const pageTitle = "404 - 页面找不到了";
+
+// 语录列表 - 每次修改博客时添加一条新语录
+const quotes = [
+  "迷失在数据的海洋里了吗？别担心，每个错误都是通往新发现的入口。——爱丽丝",
+  "这个世界没有偶然，只有必然。你所遇到的每一个404，都是命运的安排。",
+  "勇者啊，你走错路了！但这也许是一次全新的冒险开始？",
+  "路标坏了，请换个方向继续你的旅程吧~",
+  "这里什么都没有哦，就像爱丽丝的口袋一样空空的~",
+  "邦邦卡邦！就算迷路了也不要紧，因为每一次迷路都是一场新的冒险！——爱丽丝",
+];
+
+// 随机选择一条语录
+const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 ---
 
 <MainGridLayout title={pageTitle}>
@@ -10,10 +23,10 @@ const pageTitle = "404 - 页面找不到了";
             404
         </div>
         <h1 class="text-2xl font-semibold mb-4">
-            哇哈！这里什么都没有呢～
+            哇哦！这里什么都没有呢～
         </h1>
         <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
-            你访问的页面可能被移除了，或者地址输入有误。
+            {randomQuote}
         </p>
         
         <!-- 倒计时进度条 -->
