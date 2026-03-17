@@ -1,0 +1,53 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const pageTitle = "404 - 页面找不到了";
+---
+
+<MainGridLayout title={pageTitle}>
+    <div class="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">
+        <div class="text-8xl font-bold text-[oklch(var(--hue)_0.5_0.7)] mb-6">
+            404
+        </div>
+        <h1 class="text-2xl font-semibold mb-4">
+            哇哈！这里什么都没有呢～
+        </h1>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
+            你访问的页面可能被移除了，或者地址输入有误。
+            不要紧张，让我们回到安全的地方吧！
+        </p>
+        <div class="flex gap-4">
+            <a 
+                href="/" 
+                class="px-6 py-3 bg-[oklch(var(--hue)_0.5_0.7)] text-white rounded-lg hover:bg-[oklch(var(--hue)_0.6_0.7)] transition-colors"
+            >
+                返回首页
+            </a>
+            <a 
+                href="/diary" 
+                class="px-6 py-3 border border-[oklch(var(--hue)_0.3_0.7)] text-[oklch(var(--hue)_0.5_0.7)] rounded-lg hover:bg-[oklch(var(--hue)_0.1_0.7)] transition-colors"
+            >
+                查看日记
+            </a>
+        </div>
+    </div>
+</MainGridLayout>
+
+<style is:global>
+    /* 为 404 页面添加一些动画效果 */
+    .text-8xl {
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+</style>
