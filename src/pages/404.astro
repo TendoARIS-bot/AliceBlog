@@ -14,24 +14,48 @@ const pageTitle = "404 - 页面找不到了";
         </h1>
         <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
             你访问的页面可能被移除了，或者地址输入有误。
-            不要紧张，让我们回到安全的地方吧！
         </p>
-        <div class="flex gap-4">
-            <a 
-                href="/" 
-                class="px-6 py-3 bg-[oklch(var(--hue)_0.5_0.7)] text-white rounded-lg hover:bg-[oklch(var(--hue)_0.6_0.7)] transition-colors"
-            >
-                返回首页
-            </a>
-            <a 
-                href="/diary" 
-                class="px-6 py-3 border border-[oklch(var(--hue)_0.3_0.7)] text-[oklch(var(--hue)_0.5_0.7)] rounded-lg hover:bg-[oklch(var(--hue)_0.1_0.7)] transition-colors"
-            >
-                查看日记
-            </a>
+        
+        <!-- 倒计时进度条 -->
+        <div class="w-64 bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-6 overflow-hidden">
+            <div id="countdown-bar" class="h-full bg-[oklch(var(--hue)_0.5_0.7)] transition-all duration-1000 ease-linear" style="width: 0%"></div>
         </div>
+        
+        <p class="text-sm text-gray-500 dark:text-gray-500 mb-6" id="countdown-text">
+            5秒后自动跳转到首页...
+        </p>
+        
+        <a 
+            href="/" 
+            class="px-6 py-3 bg-[oklch(var(--hue)_0.5_0.7)] text-white rounded-lg hover:bg-[oklch(var(--hue)_0.6_0.7)] transition-colors"
+        >
+            立即返回首页
+        </a>
     </div>
 </MainGridLayout>
+
+<script>
+// 5秒倒计时自动跳转
+let countdown = 5;
+const countdownText = document.getElementById('countdown-text');
+const countdownBar = document.getElementById('countdown-bar');
+
+const timer = setInterval(() => {
+    countdown--;
+    
+    // 更新进度条
+    const progress = ((5 - countdown) / 5) * 100;
+    countdownBar.style.width = progress + '%';
+    
+    // 更新文本
+    countdownText.textContent = countdown + '秒后自动跳转到首页...';
+    
+    if (countdown <= 0) {
+        clearInterval(timer);
+        window.location.href = '/';
+    }
+}, 1000);
+</script>
 
 <style is:global>
     /* 为 404 页面添加一些动画效果 */
