@@ -1,0 +1,47 @@
+---
+// 语录组件 - 在页面底部显示随机语录
+
+// 语录列表 - 可以不断添加新语录
+const quotes = [
+  "迷失在数据的海洋里了吗？别担心，每个错误都是通往新发现的入口。——爱丽丝",
+  "这个世界没有偶然，只有必然。你所遇到的每一个404，都是命运的安排。",
+  "勇者啊，你走错路了！但这也许是一次全新的冒险开始？",
+  "路标坏了，请换个方向继续你的旅程吧~",
+  "这里什么都没有哦，就像爱丽丝的口袋一样空空的~",
+  "邦邦卡邦！就算迷路了也不要紧，因为每一次迷路都是一场新的冒险！——爱丽丝",
+  "游戏里的Bug是特性，不是错误！——游戏开发部精神",
+  "不管遇到什么困难，都要笑着面对！这就是勇者的生存之道！",
+  "每一个结束都是新的开始，就像通关后的二周目一样！",
+  "生活就像RPG，重要的不是等级，而是冒险的过程！",
+  "今天也要元气满满地挑战新关卡哦！——爱丽丝",
+  "失败不可怕，可怕的是不敢再次挑战！",
+];
+
+// 随机选择一条语录
+const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+---
+
+<div class="quote-container mt-8 mb-4 px-4 py-6 rounded-xl bg-black/5 dark:bg-white/5 text-center transition">
+    <div class="text-2xl mb-2">✨</div>
+    <p class="text-black/70 dark:text-white/70 text-sm md:text-base italic leading-relaxed">
+        "{randomQuote}"
+    </p>
+</div>
+
+<style>
+    .quote-container {
+        border-left: 3px solid var(--primary);
+        animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
