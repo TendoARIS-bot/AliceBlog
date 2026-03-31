@@ -66,7 +66,7 @@ export const footerConfig: {
 	icp?: string;
 	icpLink?: string;
 } = {
-	text: `© 2026 爱丽丝博客`,
+	text: "© 2026 爱丽丝博客",
 	icp: "桂 ICP 备 2025074611 号 -1",
 	icpLink: "https://beian.miit.gov.cn",
 };

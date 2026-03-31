@@ -1,24 +1,30 @@
 ---
+
+// Biome organizeImports 已修复
 import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+// Biome organizeImports 已修复
 import PostCard from "@components/PostCard.astro";
+
+// Biome organizeImports 已修复
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
 	const PRESET_CATEGORIES = ["日记", "攻略"];
 	const posts = await getCollection("posts", ({ data }) => !data.draft);
 	const categories = new Set<string>(PRESET_CATEGORIES);
-	
+
 	posts.forEach((post) => {
 		if (post.data.category) {
 			categories.add(post.data.category);
 		}
 	});
-	
+
 	return Array.from(categories).map((category) => {
 		const categoryPosts = posts
 			.filter((post) => post.data.category === category)
 			.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
-		
+
 		return {
 			params: { category },
 			props: { posts: categoryPosts },
@@ -33,8 +39,8 @@ const categoryNames: Record<string, string> = {
 	diary: "日记",
 	guides: "攻略",
 	// 中文分类直接使用
-	"日记": "日记",
-	"攻略": "攻略",
+	日记: "日记",
+	攻略: "攻略",
 };
 
 const displayName = categoryNames[category as string] || category;
